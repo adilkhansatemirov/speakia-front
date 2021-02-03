@@ -1,0 +1,34 @@
+@import './variables';
+
+*::selection {
+  background: #ddd;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+
+  @media (max-width: 1000px) {
+    width: 90%;
+  }
+
+  @media (max-width: 600px) {
+    width: 96%;
+  }
+}
+
+body {
+  font-family: 'Jost-Regular';
+}
+
+.link {
+  font-weight: bold;
+
+  &:hover {
+    color: lighten($textcolor, 35%);
+  }
+}
+
+.link--underlined {
+  text-decoration: underline;
+}
