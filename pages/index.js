@@ -44,7 +44,7 @@ export default function Landing() {
           >
             <h3>Deploy &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Instantly deploy your Next.js site to a public URL with Vercel!
             </p>
           </a>
         </div>
