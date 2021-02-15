@@ -1,14 +1,14 @@
 @import './variables';
 
 *::selection {
-  background: #ddd;
+  background: lighten($mainOrange, 3%);
 }
 
 .container {
   width: 80%;
   margin: 0 auto;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1300px) {
     width: 90%;
   }
 
@@ -21,11 +21,23 @@ body {
   font-family: 'Jost-Regular';
 }
 
+input,
+input[type=number],
+button {
+  font-family: 'Jost-Regular';
+  border: none;
+  
+  &:active, &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
 .link {
   font-weight: bold;
 
   &:hover {
-    color: lighten($textcolor, 35%);
+    color: #666;
   }
 }
 

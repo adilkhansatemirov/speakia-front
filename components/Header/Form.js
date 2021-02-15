@@ -2,8 +2,8 @@ import { useForm, Controller } from 'react-hook-form';
 import InputMask from 'react-input-mask';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
-import styles from '../styles/components/Form.module.scss';
 import axios from 'axios';
+import { useState } from 'react';
 
 const schema = Yup.object({
   name: Yup.string().required('Name is required'),
@@ -11,7 +11,8 @@ const schema = Yup.object({
 });
 
 function Form() {
-  const { register, handleSubmit, control } = useForm({
+  const [submitting, setSubmitting] = useState(false);
+  const { register, reset, handleSubmit, control } = useForm({
     defaultValues: {
       name: '',
       phoneNumber: '',
@@ -20,36 +21,38 @@ function Form() {
   });
 
   function onSubmit(data) {
+    setSubmitting(true);
     axios
       .post('https://speakia-api.herokuapp.com/mail', data)
       .then(() => {
         console.log('posted');
+        setSubmitting(false);
+        alert('Проверьте свой email (в проде уберем этот alert)');
+        reset();
       })
       .catch(() => {
+        setSubmitting(false);
+        alert('Ошибка короче');
         console.log('error');
+        reset();
       });
     console.log(data);
   }
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-      <input
-        style={{ marginBottom: '10px', padding: '5px', border: '1px solid rgba(0,0,0,0.2)', borderRadius: '3px' }}
-        type="text"
-        name="name"
-        placeholder="Ваше имя"
-        ref={register}
-      />
+    <form className="form" onSubmit={handleSubmit(onSubmit)}>
+      <p className="form__description">Оставьте свою заявку, менеджер свяжется с вами в ближайшее время</p>
+      <input className="form__input" type="text" name="name" placeholder="Ваше имя" ref={register} />
       <Controller
-        style={{ marginBottom: '10px', padding: '5px', border: '1px solid rgba(0,0,0,0.2)', borderRadius: '3px' }}
+        className="form__input"
         as={InputMask}
         control={control}
         placeholder="Ваш номер телефона"
         mask="+7 (999) 999-99-99"
         name="phoneNumber"
       />
-      <button style={{ border: '1px solid black', borderRadius: '2px' }} type="submit">
-        Оставить заявку
+      <button className="form__button" type="submit" disabled={submitting}>
+        {submitting ? 'Подождите...' : 'Оставить заявку'}
       </button>
     </form>
   );
