@@ -19,6 +19,11 @@ function Nav() {
           </ul>
           <button className="nav__button">+7 (777) 777-77-77</button>
         </div>
+        <button className="nav__hamburger-menu">
+          <span className="nav__hamburger-menu-item"></span>
+          <span className="nav__hamburger-menu-item"></span>
+          <span className="nav__hamburger-menu-item"></span>
+        </button>
       </div>
     </nav>
   );

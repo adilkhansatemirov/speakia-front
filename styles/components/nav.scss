@@ -23,6 +23,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.nav__hamburger-menu {
+  display: none;
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.nav__hamburger-menu-item {
+  background: $mainOrange;
+  margin: 3px 0;
+  border-radius: 2px;
+  width: 40px;
+  height: 2px;
 }
 
 .nav__list {
