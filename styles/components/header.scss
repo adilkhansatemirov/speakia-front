@@ -7,6 +7,10 @@
   @media (max-width: 800px) {
     padding: 70px 0;
   }
+
+  @media (max-width: 400px) {
+    padding: 40px 0;
+  }
 }
 
 .header__container {
@@ -51,6 +55,10 @@
   @media (max-width: 800px) {
     font-size: 32px;
   }
+
+  @media (max-width: 400px) {
+    font-size: 26px;
+  }
 }
 
 .header__subtitle {
@@ -68,6 +76,11 @@
 
   @media (max-width: 800px) {
     margin-bottom: 40px;
+  }
+
+  @media (max-width: 400px) {
+    margin-top: 30px;
+    font-size: 17px;
   }
 }
 
