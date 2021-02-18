@@ -1,0 +1,133 @@
+.program__courses-list {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.program__courses-list-item {
+  border: 1px solid rgba(6, 43, 91, 0.19);
+  box-shadow: 1px 1px 5px 0.2px rgba(6, 43, 91, 0.19);
+  margin: 0 10px 30px;
+  padding: 20px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (max-width: 400px) {
+    min-width: 0;
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+.program__courses-list-item-title {
+  font-weight: bold;
+  color: $mainBlue;
+  font-size: 19px;
+}
+
+.program__courses-list-item-list {
+  margin-top: 20px;
+}
+
+.program__courses-list-item-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.program__courses-list-item-tick-box {
+  border: 2px solid $mainOrange;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 19px;
+  height: 19px;
+}
+
+.program__courses-list-item-list-item-text {
+  margin-left: 10px;
+}
+
+.program__courses-list-item-bottom-part {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.program__courses-list-item-price-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.program__courses-list-item-price-old-price {
+  color: $mainBlue;
+  font-weight: bold;
+  font-size: 24px;
+  position: relative;
+  white-space: nowrap;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 80%;
+    background: #ff0a0a;
+    transform: rotate(-10deg);
+    height: 3px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 18px;
+  }
+}
+
+.program__courses-list-item-price-new-price {
+  font-size: 34px;
+  color: $mainOrange;
+  font-weight: bold;
+  margin-left: 10px;
+  position: relative;
+  white-space: nowrap;
+  top: 5px;
+
+  @media (max-width: 400px) {
+    font-size: 26px;
+  }
+}
+
+.program__courses-list-item-price-tg {
+  font-weight: normal;
+  font-size: 19px;
+
+  @media (max-width: 400px) {
+    font-size: 16px;
+  }
+}
+
+.program__courses-list-item-button {
+  margin-top: 20px;
+  background: $mainOrange;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 5px;
+  border: 2px solid $mainOrange;
+
+  &:hover,
+  &:focus {
+    background: #fff;
+    color: $mainOrange;
+    border: 2px solid $mainOrange;
+  }
+
+  &:active {
+    background: $mainOrange;
+    color: #fff;
+    border: 2px solid $mainOrange;
+  }
+}

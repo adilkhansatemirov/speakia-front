@@ -2,3 +2,18 @@
   height: 6px;
   background: $mainOrange;
 }
+
+.section {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.section-title {
+  font-size: 32px;
+  text-transform: uppercase;
+  color: $mainBlue;
+
+  @media (max-width: 400px) {
+    font-size: 24px;
+  }
+}
