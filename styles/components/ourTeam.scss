@@ -1,0 +1,59 @@
+.team__list {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team__list-item {
+  width: 340px;
+  box-shadow: 2px 4px 30px 3px rgba(6, 43, 91, 0.08);
+  margin: 0 10px 30px;
+}
+
+.team__list-item-top-part {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url('/images/teacher-bg.png');
+  background-size: cover;
+  background-position: top center;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+}
+
+.team__list-item-top-part-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 5px solid white;
+  border-radius: 50%;
+  position: relative;
+  top: 40px;
+}
+
+.team__list-item-main-part {
+  color: $mainBlue;
+  padding: 90px 15px 20px;
+}
+
+.team__list-item-info {
+  margin-top: 20px;
+}
+
+.team__list-item-name {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.team__list-item-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.team__list-item-info-item-icon {
+  max-width: 40px;
+  width: 30px;
+  margin-right: 10px;
+}

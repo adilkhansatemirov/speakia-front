@@ -1,7 +1,7 @@
 import React from 'react';
 
 function ProgramOfEducation() {
-  const courcesData = [
+  const courses = [
     {
       id: 1,
       title: 'Интенсивный курс по разговорному английскому',
@@ -42,7 +42,7 @@ function ProgramOfEducation() {
       <div className="container">
         <h2 className="section-title">программа обучения SPEAKIA.KZ</h2>
         <ul className="program__courses-list">
-          {courcesData.map((course) => (
+          {courses.map((course) => (
             <li key={course.id} className="program__courses-list-item">
               <div className="program__courses-list-item-top-part">
                 <h2 className="program__courses-list-item-title">{course.title}</h2>

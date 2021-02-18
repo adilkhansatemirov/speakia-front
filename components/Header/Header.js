@@ -1,13 +1,8 @@
-import SectionDividerLine from 'components/Shared/SectionDividerLine';
-import React from 'react';
 import Form from './Form';
-import Nav from './Nav';
 
 function Header() {
   return (
     <header className="header">
-      <Nav />
-      <SectionDividerLine />
       <div className="header__main">
         <div className="header__container container">
           <div className="header__title_arrow">
