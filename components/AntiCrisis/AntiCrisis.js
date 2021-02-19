@@ -1,6 +1,6 @@
 import Form from 'components/Form';
 
-function AntiCrisis() {
+function AntiCrisis({ toast }) {
   return (
     <section>
       <div className="anticrisis__main">
@@ -12,7 +12,7 @@ function AntiCrisis() {
               <span className="text--orange"> бесплатный спикинг клаб с иностранцем</span>
             </h2>
           </div>
-          <Form />
+          <Form toast={toast} />
         </div>
       </div>
     </section>

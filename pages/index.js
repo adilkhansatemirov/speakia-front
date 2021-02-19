@@ -7,6 +7,7 @@ import OurTeam from 'components/OurTeam/OurTeam';
 import AntiCrisis from 'components/AntiCrisis/AntiCrisis';
 import Reviews from 'components/Reviews/Reviews';
 import Footer from 'components/Footer/Footer';
+import { ToastContainer, toast } from 'react-toastify';
 
 function Landing() {
   return (
@@ -17,15 +18,16 @@ function Landing() {
       </Head>
       <Nav />
       <SectionDividerLine />
-      <Header />
+      <Header toast={toast} />
       <ProgramOfEducation />
       <SectionDividerLine />
       <OurTeam />
       <SectionDividerLine />
-      <AntiCrisis />
+      <AntiCrisis toast={toast} />
       <Reviews />
       <SectionDividerLine />
       <Footer />
+      <ToastContainer position="bottom-center" />
     </div>
   );
 }

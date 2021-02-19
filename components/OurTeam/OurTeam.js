@@ -2,9 +2,9 @@ function OurTeam() {
   const teachers = [
     {
       id: 1,
-      name: 'Dinara Teacher',
-      education: 'Budapest University of Technology and Economics (Венгрия)',
-      experienceYears: 3,
+      name: 'Wyatt Wells',
+      education: 'University of Wisconsin Parkside',
+      experienceYears: '3 года',
       certificates: ['IELTS: 7.0 (2018)', 'SAT: 1520 из 1600'],
       img: 'teacher1.jpg',
     },
@@ -12,22 +12,22 @@ function OurTeam() {
       id: 2,
       name: 'Dinara Teacher',
       education: 'Budapest University of Technology and Economics (Венгрия)',
-      experienceYears: 3,
+      experienceYears: '3 года',
       certificates: ['IELTS: 7.0 (2018)', 'SAT: 1520 из 1600'],
       img: 'teacher1.jpg',
     },
     {
       id: 3,
-      name: 'Dinara Teacher',
-      education: 'Budapest University of Technology and Economics (Венгрия)',
-      experienceYears: 3,
+      name: 'Laura Teacher',
+      education: 'Nazarbayev University',
+      experienceYears: '3 года',
       certificates: ['IELTS: 7.0 (2018)', 'SAT: 1520 из 1600'],
       img: 'teacher2.jpg',
     },
   ];
 
   return (
-    <section className="section">
+    <section className="section" id="ourTeam">
       <div className="container">
         <h2 className="section-title">Наша команда</h2>
         <ul className="team__list">

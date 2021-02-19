@@ -10,7 +10,7 @@ const schema = Yup.object({
   phoneNumber: Yup.string().required('Phone number is required'),
 });
 
-function Form() {
+function Form({ toast }) {
   const [submitting, setSubmitting] = useState(false);
   const { register, reset, handleSubmit, control } = useForm({
     defaultValues: {
@@ -27,12 +27,12 @@ function Form() {
       .then(() => {
         console.log('posted');
         setSubmitting(false);
-        alert('Проверьте свой email (в проде уберем этот alert)');
+        toast.success('Ваша заявка принята! 🚀');
         reset();
       })
       .catch(() => {
         setSubmitting(false);
-        alert('Ошибка короче');
+        toast.error('Пожалуйста повторите, что-то пошло не так 😶');
         console.log('error');
         reset();
       });

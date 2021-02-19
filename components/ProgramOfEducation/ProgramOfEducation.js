@@ -36,7 +36,7 @@ function ProgramOfEducation() {
   ];
 
   return (
-    <section className="section">
+    <section className="section" id="programOfEducation">
       <div className="container">
         <h2 className="section-title">программа обучения SPEAKIA.KZ</h2>
         <ul className="program__courses-list">
@@ -64,7 +64,13 @@ function ProgramOfEducation() {
                     {course.newPrice} <span className="program__courses-list-item-price-tg">₸/мес</span>
                   </p>
                 </div>
-                <button className="program__courses-list-item-button">Попробовать бесплатно</button>
+                <a
+                  href={`https://api.whatsapp.com/send?phone=77082286415&text=Здравствуйте! Меня заинтереcовал курс "${course.title}".`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="program__courses-list-item-button">Попробовать бесплатно</button>
+                </a>
               </div>
             </li>
           ))}

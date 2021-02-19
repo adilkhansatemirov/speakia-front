@@ -1,6 +1,6 @@
 import Form from '../Form';
 
-function Header() {
+function Header({ toast }) {
   return (
     <header className="header">
       <div className="header__main">
@@ -14,7 +14,7 @@ function Header() {
             </div>
             <img className="header__arrow" src="/images/arrow.png" alt="arrow" />
           </div>
-          <Form />
+          <Form toast={toast} />
         </div>
       </div>
     </header>

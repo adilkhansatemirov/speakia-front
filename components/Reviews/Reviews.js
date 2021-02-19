@@ -46,7 +46,7 @@ function Reviews() {
   const imagesSources = ['review1.jpg', 'review2.jpg', 'review3.jpg', 'review4.jpg'];
 
   return (
-    <section className="section">
+    <section className="section" id="reviews">
       <div className="container">
         <h2 className="section-title">отзывы</h2>
         <div className="reviews__slider-container">
