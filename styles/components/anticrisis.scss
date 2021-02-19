@@ -1,0 +1,70 @@
+.anticrisis__main {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%),
+    url('/images/anticrisis.jpg');
+  background-size: cover;
+  background-position: top center;
+  padding: 30px 0;
+}
+
+.anticrisis__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.anticrisis__text-container {
+  width: 80%;
+  margin-right: 20px;
+
+  @media (max-width: 800px) {
+    width: auto;
+  }
+}
+
+.anticrisis__title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  @media (max-width: 1000px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 32px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 26px;
+  }
+}
+
+.anticrisis__subtitle {
+  margin-top: 35px;
+  font-size: 28px;
+  text-transform: uppercase;
+
+  @media (max-width: 1200px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 800px) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 400px) {
+    margin-top: 30px;
+    font-size: 17px;
+  }
+}

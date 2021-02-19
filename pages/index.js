@@ -4,6 +4,8 @@ import ProgramOfEducation from 'components/ProgramOfEducation/ProgramOfEducation
 import SectionDividerLine from 'components/Shared/SectionDividerLine';
 import Nav from 'components/Nav';
 import OurTeam from 'components/OurTeam/OurTeam';
+import AntiCrisis from 'components/AntiCrisis/AntiCrisis';
+import Reviews from 'components/Reviews/Reviews';
 
 function Landing() {
   return (
@@ -19,6 +21,8 @@ function Landing() {
       <SectionDividerLine />
       <OurTeam />
       <SectionDividerLine />
+      <AntiCrisis />
+      <Reviews />
     </div>
   );
 }
