@@ -6,7 +6,7 @@ function OurTeam() {
       education: 'University of Wisconsin Parkside',
       experienceYears: '4 года',
       certificates: ['Travel journalist'],
-      img: 'teacher1.jpeg',
+      img: 'teacher1.jpg',
     },
     {
       id: 2,
