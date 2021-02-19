@@ -4,9 +4,9 @@ function OurTeam() {
       id: 1,
       name: 'Wyatt Wells',
       education: 'University of Wisconsin Parkside',
-      experienceYears: '3 года',
-      certificates: ['IELTS: 7.0 (2018)', 'SAT: 1520 из 1600'],
-      img: 'teacher1.jpg',
+      experienceYears: '4 года',
+      certificates: ['Travel journalist'],
+      img: 'teacher1.jpeg',
     },
     {
       id: 2,
@@ -14,15 +14,15 @@ function OurTeam() {
       education: 'Budapest University of Technology and Economics (Венгрия)',
       experienceYears: '3 года',
       certificates: ['IELTS: 7.0 (2018)', 'SAT: 1520 из 1600'],
-      img: 'teacher1.jpg',
+      img: 'teacher2.jpg',
     },
     {
       id: 3,
       name: 'Laura Teacher',
       education: 'Nazarbayev University',
       experienceYears: '3 года',
-      certificates: ['IELTS: 7.0 (2018)', 'SAT: 1520 из 1600'],
-      img: 'teacher2.jpg',
+      certificates: ['IELTS 7.5 (2017)'],
+      img: 'teacher3.jpg',
     },
   ];
 

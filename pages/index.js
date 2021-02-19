@@ -14,7 +14,9 @@ function Landing() {
     <div>
       <Head>
         <title>Speakia.kz</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/orange.jpg" />
+        <meta name="description" content="Курсы английского языка с опытными преподавателями"></meta>
+        <meta name="keywords" content="Speakia, языковая школа, изучение английского, преподаватели по английскому" />
       </Head>
       <Nav />
       <SectionDividerLine />
