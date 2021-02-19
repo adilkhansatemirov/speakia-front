@@ -50,28 +50,44 @@ function Reviews() {
       <div className="container">
         <h2 className="section-title">отзывы</h2>
         <div className="reviews__slider-container">
-          <Slider
-            {...{
-              dots: true,
-              arrows: true,
-              infinite: true,
-              speed: 500,
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              nextArrow: <SampleNextArrow />,
-              prevArrow: <SamplePrevArrow />,
-              appendDots: Dots,
-              customPaging: Paging,
-            }}
-          >
-            {imagesSources.map((imageSource) => (
-              <div className="reviews__slider-item" key={imageSource}>
-                <div className="reviews__slider-item-container">
-                  <img className="reviews__slider-item-image" src={`/images/${imageSource}`} alt="speakia review" />
+          <div className="reviews__slider">
+            <Slider
+              {...{
+                dots: true,
+                arrows: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                nextArrow: <SampleNextArrow />,
+                prevArrow: <SamplePrevArrow />,
+                appendDots: Dots,
+                customPaging: Paging,
+                responsive: [
+                  {
+                    breakpoint: 800,
+                    settings: {
+                      slidesToShow: 2,
+                    },
+                  },
+                  {
+                    breakpoint: 600,
+                    settings: {
+                      slidesToShow: 1,
+                    },
+                  },
+                ],
+              }}
+            >
+              {imagesSources.map((imageSource) => (
+                <div className="reviews__slider-item" key={imageSource}>
+                  <div className="reviews__slider-item-container">
+                    <img className="reviews__slider-item-image" src={`/images/${imageSource}`} alt="speakia review" />
+                  </div>
                 </div>
-              </div>
-            ))}
-          </Slider>
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
     </section>
