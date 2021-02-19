@@ -8,6 +8,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
 }
 
 .footer__logo-text {
@@ -22,5 +26,35 @@
 }
 
 .footer__socials-item {
-    margin: 0 10px;
+  margin: 0 10px;
+}
+
+.footer__ref-text {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.footer__ref-mobile-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__ref-mobile-text {
+  display: none;
+  color: white;
+  white-space: nowrap;
+
+  &:first-child {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 600px) {
+    display: block;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
 }
