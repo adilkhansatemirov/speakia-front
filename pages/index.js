@@ -6,6 +6,7 @@ import Nav from 'components/Nav';
 import OurTeam from 'components/OurTeam/OurTeam';
 import AntiCrisis from 'components/AntiCrisis/AntiCrisis';
 import Reviews from 'components/Reviews/Reviews';
+import Footer from 'components/Footer/Footer';
 
 function Landing() {
   return (
@@ -23,6 +24,8 @@ function Landing() {
       <SectionDividerLine />
       <AntiCrisis />
       <Reviews />
+      <SectionDividerLine />
+      <Footer />
     </div>
   );
 }

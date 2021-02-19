@@ -1,0 +1,28 @@
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+.reviews__slider-container {
+  margin: 30px 0;
+}
+
+.reviews__slider-item {
+  outline: none;
+}
+
+.reviews__slider-item-container {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.reviews__slider-item-image {
+  width: 190px;
+}
+
+.slick-dots .slick-active div {
+  background: $mainOrange !important;
+}
+
+.slick-next:before, .slick-prev:before {
+  content: '';
+}

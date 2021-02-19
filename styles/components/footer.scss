@@ -1,0 +1,26 @@
+.footer {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 70px 0 50px;
+}
+
+.footer__text-container {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__logo-text {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.footer__socials-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__socials-item {
+    margin: 0 10px;
+}
